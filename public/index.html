@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API STOCKS</title>
+</head>
+
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+<body>
+
+
+    <div class="vw-100 vh-100 bg-dark d-flex justify-content-center align-items-center">
+
+        <table class="table table-dark w-50">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Name</th>
+                <th scope="col">Volume</th>
+                <th scope="col">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"><img src="./img/btc.png" alt="BTC" style="width: 60px; height: 40px;"></th>
+                <td>
+                  <h5>BTC</h5>
+                  <small class="d-block text-secondary" style="font-size: 12px;">Bitcoin</small>
+                </td>
+                <td id="btc-volume" class="text-info"></td>
+                <td id="btc-price" class="text-warning"></td>
+              </tr>
+              <tr>
+                <th scope="row"><img src="./img/ethereum.svg" alt="ETH" style="width: 60px; height: 40px;"></th>
+                <td>
+                  <h6>ETH</h6>
+                  <small class="d-block text-secondary" style="font-size: 12px;">Ethereum</small>
+                </td>
+                <td id="eth-volume" class="text-info"></td>
+                <td id="eth-price" class="text-warning"></td>
+              </tr>
+              <tr>
+                <th scope="row"><img src="./img/dogecoin-1.svg" alt="ETH" style="width: 60px; height: 40px;"></th>
+                <td>
+                  <h6>DOGE</h6>
+                  <small class="d-block text-secondary" style="font-size: 12px;">Dogecoin</small>
+                </td>
+                <td id="doge-volume" class="text-info"></td>
+                <td id="doge-price" class="text-warning"></td>
+              </tr>
+              <tr>
+                <th scope="row"><img src="./img/XRP.png" alt="ETH" style="width: 40px; height: 40px; margin-left: 10px;"></th>
+                <td>
+                  <h6>XRP</h6>
+                  <small class="d-block text-secondary" style="font-size: 12px;">Ripple</small>
+                </td>
+                <td id="xrp-volume" class="text-info"></td>
+                <td id="xrp-price" class="text-warning"></td>
+              </tr>
+              <tr>
+                <th scope="row"><img src="./img/cardano.png" alt="ADA" style="width: 40px; height: 40px; margin-left: 10px;"></th>
+                <td>
+                  <h6>
+                    ADA
+                  </h6>
+                  <small class="d-block text-secondary" style="font-size: 12px;">Cardano</small>
+                </td>
+                <td id="ada-volume" class="text-info"></td>
+                <td id="ada-price" class="text-warning"></td>
+              </tr>
+              <tr>
+                <th scope="row"><img src="./img/Polkadot.png" alt="ETH" style="width: 40px; height: 40px; margin-left: 10px;" ></th>
+                <td>
+                  <h6>DOT</h6>
+                  <small class="d-block text-secondary" style="font-size: 12px;">Polkadot</small>
+                </td>
+                <td id="dot-volume" class="text-info"></td>
+                <td id="dot-price" class="text-warning"></td>
+              </tr>
+            </tbody>
+          </table>
+    
+    </div>
+
+
+    <script src="./socket.io/socket.io.js"></script>
+    <script src="./js/socket-client.js"></script>
+</body>
+</html>
